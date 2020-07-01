@@ -5,6 +5,7 @@ RUN apk upgrade
 
 # required by qemu
 RUN apk add\
+ wget\
  make\
  python3\
  gcc\
@@ -12,7 +13,8 @@ RUN apk add\
  pkgconf\
  linux-headers\
  glib-dev glib-static\
- zlib-dev zlib-static
+ zlib-dev zlib-static\
+ pixman-dev pixman-static
 
 # additional
 RUN apk add bash xz
